@@ -1,0 +1,373 @@
+body {
+  background-color: #E5E5E5;
+}
+tbody{
+  background-color: rgba(255, 237, 231, 0.507);
+}
+table {
+    border-collapse: collapse;
+    width: max-content;
+    width: 85%;
+    border-radius: 7px;
+  }
+  th,
+  td {
+  
+    padding: 7px 0px;
+    text-align: center;
+  }
+  th {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  td {
+    font-size: 16px;
+    color: black;
+  }
+ 
+  tr th {
+    background-color: #fe5b1bb3;
+    color: white;
+    font-family: Poppins-Regular;
+    
+  }
+
+  tr{
+    border-bottom: 1px solid rgba(254, 91, 27, 0.5);
+  }
+
+  table tr:last-child { 
+    border-bottom: none; 
+}
+
+.circle {
+  width: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.pagination {
+  margin: 20px 20px;
+  padding: 10px;
+  border: 1px solid #e3bebe;
+  float: right;
+  border-radius: 5px;
+  margin-right: 1%;
+}
+
+.moving {
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 5px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+select {
+  padding: 8px;
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+  /* box-shadow: 1px 1px 6px 1px grey; */
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 250px;
+  font-size: 15px;
+  background: white;
+  color: black;
+}
+
+.vacus-logo {
+  width: 165px;
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.imgdiv {
+  margin: auto;
+}
+
+.imgdiv {
+  font-size: 18px;
+  /* color: #00629b; */
+  color: #000000b7;
+  cursor: pointer;
+}
+
+/* ======================== */
+
+.graph-modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  overflow: auto;
+  background-color: rgb(128, 128, 128, 0.5);
+}
+
+.graph-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 0px lightgray;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.graph-modal-close {
+  font-weight: 400;
+  font-size: 23px;
+  cursor: pointer;
+  color: #f14444;
+  margin-top: -70px;
+  float: right;
+
+}
+
+.img-block {
+  max-width: 100%;
+  max-height: auto;
+  align-items: center;
+}
+
+.graph-modal-content h5 {
+  margin-top: 0px;
+  font-size: 20px;
+}
+
+
+.config {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #000000b8;
+  border-radius: 0.6em;
+  color: #fe5b1bcc;
+  cursor: pointer;
+  width: 150px;
+  height: 35px;
+  margin-top: -15px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.content-container {
+  margin-top: 30px;
+}
+
+.config:hover,
+.config:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.con {
+  transition: box-shadow 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+.con:hover {
+  box-shadow: 0 0 40px 40px #fe5b1bcc inset;
+}
+
+
+.modals-box {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 1;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modals-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.close-button,
+.btn-danger,
+.btn-primary {
+  float: right;
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 3px 10px;
+}
+
+.close-button:hover {
+  background-color: #c2c2c2;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 10px 20px;
+}
+
+.modal-footer {
+  background: #ecf0f1;
+  border-radius: 0 0 3px 3px;
+  padding: 10px 20px;
+}
+
+.modal-cancel-btn {
+  margin-right: 30px;
+  background: lightgray;
+}
+
+input[type=text],
+input[type=number],
+select {
+  width: 250px;
+  font-size: 16px;
+  padding: 10px 15px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.inputdiv {
+  display: block;
+  padding: 9px 0;
+}
+
+.label {
+  width: 150px;
+  font-weight: 500;
+  color: gray;
+  display: inline-block;
+}
+
+#graphModal2 .graph-modal-content {
+  width: 40%;
+}
+
+.btn-submit {
+  padding: 7px 30px;
+  background-color: #038308;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-right: 125px;
+}
+
+.radio {
+  width: 21px;
+  height: 23px;
+  position: relative;
+  top: 6px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(128, 128, 128, 0.5);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 305px;
+  height: 110px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 4px lightgray;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.modalheader {
+  width: 350px;
+  height: 36px;
+  background: #ed7669;
+  margin-top: -20px;
+  margin-left: -20px;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.modaltext {
+  float: right;
+  padding: 5px;
+}
+
+/* SessionOut Button */
+.btn-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #038308;
+  color: white;
+}
+
+.danger-btn {
+  background-color: #ed7669;
+}
+
+.btn {
+  width: fit-content;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.25);
+}
